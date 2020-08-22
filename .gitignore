@@ -1,6 +1,5 @@
 # editor
-.vscode
+.vscode/settings.json
 
 # development
 debug
-vendor
