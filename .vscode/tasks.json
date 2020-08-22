@@ -1,0 +1,30 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build C/C++ Project",
+      "type": "cpp",
+      "sources": [
+        "${fileDirname}/**/*.cc"
+      ],
+      "output": "${workspaceFolder}/debug/${fileBasenameNoExtension}.exe",
+      "options": {
+        "cwd": "${fileDirname}"
+      },
+      "includePath": [
+        "${workspaceFolder}/vendor/**/include"
+      ],
+      "libraryPath": [
+        "${workspaceFolder}/vendor/**/lib/*"
+      ],
+      "compilerPath": "g++", 
+      "compilerArgs": [
+        "-g"
+      ],
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "group": "build"
+    }
+  ]
+}
